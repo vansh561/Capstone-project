@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My E-Commerce Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Products</h2>
+      <ul class="products">
+        <li>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230407154213/gfg-bag.jpg" alt="Bag">
+          <h3>Sample Bag</h3>
+          <p>Bag with 2 Extra pockets</p>
+          <p><span>₹1200</span></p>
+          <button>Add to cart</button>
+        </li>
+        <li>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230407153931/gfg-tshirts.jpg" alt="T-shirt">
+          <h3>Sample T-shirt</h3>
+          <p>100% cotton T-shirt</p>
+          <p><span>₹800</span></p>
+          <button>Add to cart</button>
+        </li>
+        <li>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230407153938/gfg-hoodie.jpg" alt="Hoodie">
+          <h3>Sample Hoodie</h3>
+          <p>Black Color Hoodie</p>
+          <p><span>₹1500</span></p>
+          <button>Add to cart</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 My E-Commerce Shop</p>
+  </footer>
+</body>
+</html>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+header {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 16px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+.products li {
+  border: 1px solid #eee;
+  padding: 10px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  list-style: none;
+  text-align: center;
+}
+.products img {
+  max-width: 100%;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+button {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  margin-top: 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: #444;
+}
+footer {
+  background: #2a2a2a;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
