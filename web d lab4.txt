@@ -1,0 +1,73 @@
+/** 1. Quiz Questions Array */
+
+const quizQuestions = [
+    {
+        question: "What is the capital of India?",
+        answer: "delhi"
+    },
+    {
+        question: "What is 9 multiplied by 5?",
+        answer: "45"
+    },
+    {
+        question: "What is the primary programming language for web browsers?",
+        answer: "javascript"
+    },
+    {
+        question: "What is the largest planet in our solar system?",
+        answer: "jupitar"
+    },
+    {
+        question: "What is the chemical symbol for water?",
+        answer: "h2o"
+    }
+];
+
+
+/** 2. Function to run the quiz */
+
+function runQuiz() {
+    // 3. Score Initialization
+    let score = 0;
+    const totalQuestions =
+    quizQuestions.length;
+
+    // Display a welcome message before starting
+    alert("Welcome to the Console Quiz! Press OK to start.");
+
+    // 4. Loop Through Questions
+    for (let i = 0; i < totalQuestions; i++) {
+        const currentQuiz = quizQuestions[i];
+
+        // 5. Prompt for User Input
+        // Note: Using prompt() is non-standard in modern web apps but fulfills the requirement for console testing.
+        let participantInput = prompt(
+            Question ${i + 1} of ${totalQuestion}:\n$
+            {currentQuiz.question}
+        );
+
+        // 6. Normalize the input
+        // Convert to lowercase and remove leading/trailing spaces for fair comparison.
+        const normalizedInput = participantInput.toLowerCase().trim();
+        const correctAnswer = currentQuiz.answer.toLowerCase().trim();
+
+        // 7. Check the answer
+        if (normalizedInput === correctAnswer) {
+            score++;
+            // 8. Provide Immediate Feedback (Correct)
+        alert("Correct! Your score is now" + score);
+        } else {
+            // 8. Provide Immediate Feedback (Incorrect)
+        alert(Incorrect. The coorect answer was: ${correctAnswer});
+        }
+    }
+
+    // 9. Display the Final Score
+    alert(Quiz finished! You scored ${score} out of ${totalQuestions}.);
+    console.log(Final Quiz Score: $ {score}/${totalQuestions});
+}
+
+// 10. Run the Quiz in the Browser
+Console
+// You can remove this line if you plan to call runQuiz() manually.
+runQuiz();
